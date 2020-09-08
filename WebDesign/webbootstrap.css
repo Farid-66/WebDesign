@@ -1,0 +1,90 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-item>img{
+    width: 100%;
+    height: 630px;
+}
+.carousel-caption>h5{
+    font-size: 78px;
+
+}
+.carousel-caption>p{
+    font-size: 36px;
+
+}
+
+.dropdown>#dropdownMenuLink{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+.navbar-nav>.nav-item>.nav-link{
+    color:rgb(90, 90, 90) ;
+    display: inline-block;
+}
+.navbar-nav>.nav-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(8, 156, 57);
+    transition: .3s;
+}
+.navbar-nav>.nav-item:hover::after{
+    width: 100%;;
+    transition: 0.3;
+}
+#dropdownli::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(8, 156, 57);
+    transition: .3s;
+}
+#dropdownli:hover::after{
+    width: 100%;
+    transition: 0.3;
+}
+
+
+.fixed{
+    background-image: url(fixed.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+.icon{
+    font-size: 22px;
+    margin:4px;
+}
+
+.iconcol>#facebook:hover{color: rgba(57, 57, 247, 0.829);}
+.iconcol>#twitter:hover{ color: rgb(148, 219, 240);}
+.iconcol>#google:hover{color: rgb(226, 82, 82);}
+.iconcol>#youtube:hover{color:rgb(228, 0, 0) ;}
+.iconcol>#instagram:hover{ color: rgb(7, 168, 7);}
+
+@media only screen and (max-width:780px)
+{
+    #slidimg{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,397 @@
+<!-------------
+         |      
+      |  | |
+   |  |  | |
+ |_|__|__| |
+--------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+
+    <!----Font link------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-------------------------------------------------->
+
+    <!--Bootstrap link---------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!------------------------------------------------>
+
+    <!---Css-------------------------------------------->
+    <link rel="shortcut icon" href="programming.png" type="image/x-icon">
+    <link rel="stylesheet" href="webbootstrap.css">
+    <!-------------------------------------------------->
+
+
+</head>
+
+<body>
+
+    <!---Navbar-------------------------->
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light   ">
+        <a class="navbar-brand ml-3">
+            <img src="programming.png" style="width: 40px; height: 40px; margin-right: 10px;" alt="" srcset="">
+            Web Design</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse  mr-2 justify-content-end">
+            <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="dropdown" id="dropdownli">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Web Design
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#html">Html</a>
+                        <a class="dropdown-item" href="#css">Css</a>
+                        <a class="dropdown-item" href="#bootstrap4">Bootstrap4</a>
+                        <a class="dropdown-item" href="#jquery">jQuery</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------->
+
+    <!---Slider-------------------------->
+    <img class="img d-sm-none w-100" id="slidimg" src="pexels-photo-3740232.jpeg" alt="">
+    <div id="Carousel" class="carousel slide d-none d-sm-block">
+        <ol class="carousel-indicators">
+            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel" data-slide-to="1"></li>
+            <li data-target="#Carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+            <div class="carousel-item active " data-interval="10000">
+                <img src="pexels-photo-3740232.jpeg" class="d-block w-100 "  alt="slide">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Web Design</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                    <button class="btn btn-success btn-lg">Get Started</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pexels-photo-374074.jpeg" class="d-block w-100" alt="slide" >
+            </div>
+            <div class="carousel-item">
+                <img src="pexels-photo-160107.jpeg" class="d-block w-100" alt="slide" >
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5 >HTML CSS BOOTSTRAP4</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <button class="btn btn-success btn-lg">Get Started</button>
+                </div>
+            </div>
+
+            <a href="#Carousel" class="carousel-control-prev" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#Carousel" class="carousel-control-next" data-slide="next" role="button">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!----------------------------------->
+
+    <!--Junbotron------------------------>
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">
+                <h2>Jumbotron</h2>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ex labore esse
+                veritatis minus quae aliquid illo. Odio deserunt est exercitationem cumque praesentium dolore
+                placeat?</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3  col-xl-2" style="margin: auto;">
+                <button class="btn btn-outline-success btn-lg">BUTTON</button>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------->
+
+    <!--1.Section------------------------>
+    <div class="container py-5">
+        <div class="row welcom text-center">
+            <div class="col-12">
+                <h1 class="display-4 mb-3" id="about">About</h1>
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est explicabo atque
+                    illum, repellat incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
+                    Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Illum deleniti iusto facilis
+                    et accusamus ipsum aperiam vero necessitatibus dolor ex.</p>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------------->
+
+    <!--2.Section------------------------>
+    <div class="container py-5">
+        <div class="row text-center py-5">
+            <div class="col-xs-12 col-sm-6  colid">
+                <img src="html-coding.png" alt="html">
+                <h3>HTML5</h3>
+                <p class="lead">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis, distinctio. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6  colid">
+                <img src="css.png" alt="css">
+                <h3>CSS3</h3>
+                <p class="lead">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, molestias. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 colid">
+                <img src="bootstrap.png" alt="bootstrap">
+                <h3>BOOTSTRAP4</h3>
+                <p class="lead">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vero, et. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6  colid">
+                <img src="jquery.png" alt="jquery">
+                <h3>jQuery</h3>
+                <p class="lead">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, ullam. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------------->
+
+
+
+    <!--3.Section------------------------>
+
+    <div class="container-fluid my-5 w-100">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8  ">
+                <h2 id="html">HTML</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere asperiores
+                    tempora eos
+                    nesciunt earum temporibus sunt beatae deserunt laborum!</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam fuga fugit sunt.
+                    Commodi,
+                    deleniti.</p>
+                <br>
+                <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <img src="htmlimg.png" class="img d-none d-sm-block" style="width: 350px; height: 250px;" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-5 w-100">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+                <img src="cssimg.png" class="img d-none d-sm-block" style="width: 350px; height: 250px;" alt="">
+            </div>
+            <div class="col-12 col-md-8 col-lg-8  ">
+                <h2 id="css">CSS</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere asperiores
+                    tempora eos
+                    nesciunt earum temporibus sunt beatae deserunt laborum!</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam fuga fugit sunt.
+                    Commodi,
+                    deleniti.</p>
+                <br>
+                <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid my-5 w-100">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8  ">
+                <h2 id="bootstrap4">BootStrap4</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere asperiores
+                    tempora eos
+                    nesciunt earum temporibus sunt beatae deserunt laborum!</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam fuga fugit sunt.
+                    Commodi,
+                    deleniti.</p>
+                <br>
+                <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <img src="bootimg.png" class="img d-none d-sm-block" style="width: 350px; height: 250px;" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-5 w-100">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+                <img src="jqimg.png" class="img d-none d-sm-block" alt="">
+            </div>
+            <div class="col-12 col-md-8 col-lg-8  ">
+                <h2 id="jquery">jQuery</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere asperiores
+                    tempora eos
+                    nesciunt earum temporibus sunt beatae deserunt laborum!</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam fuga fugit sunt.
+                    Commodi,
+                    deleniti.</p>
+                <br>
+                <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+    <!----------------------------------->
+
+    <!--Fixed Background----------------->
+    <figure>
+        <div class="fixed w-100">
+
+        </div>
+    </figure>
+    <!----------------------------------->
+
+    <!--Meet the team-------------------->
+    <div class="container">
+        <h1 class="display-3 text-center" id="team">Meet The Team</h1>
+
+        <hr>
+        <div class="card-deck ">
+            <div class="card">
+                <img class="card-img-top" src="adam1.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title ">
+                        <h2>John Doe</h2>
+                    </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi consequuntur
+                        alias dolor maxime blanditiis obcaecati.</p>
+                    <a href="#" class="btn btn-success">See Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="adam2.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h2>Mary Jo</h2>
+                    </h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus recusandae
+                        eum voluptatibus aperiam tenetur molestias?</p>
+                    <a href="#" class="btn btn-success">See Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="adam3.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h2>Phil Ho</h2>
+                    </h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+                        laudantium doloribus quos voluptates nulla mollitia.</p>
+                    <a href="#" class="btn btn-success">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+    </div>
+
+    <!----------------------------------->
+
+
+    <!--Footer--------------------------->
+    <footer class="footer" id="contact">
+        <div class="container-fluid bg-dark" style="color:white;">
+            <div class="row text-center ">
+                <div class="col-md-3 iconcol">
+                    <hr style="background-color: white;">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Service</a></p>
+                    <p><a href="#">Team</a></p>
+                    <p><a href="#">Connect</a></p>
+                    <a href="#" class="fa fa-facebook icon " id="facebook"></a>
+                    <a href="#" class="fa fa-twitter icon" id="twitter"></a>
+                    <a href="#" class="fa fa-google icon" id="google"></a>
+                    <a href="#" class="fa fa-youtube icon" id="youtube"></a>
+                    <a href="#" class="fa fa-instagram icon " id="instagram"></a>
+                    <a href="" class="fa fa-github icon"></a>
+                </div>
+                <div class="col-md-3">
+                    <hr style="background-color: white;">
+                    <h5 class="dark">Address</h5>
+                    <hr style="background-color: white;">
+                    <address>
+                        <p>555-555-5555</p>
+                        <p>email@myemail.con</p>
+                        <p>Azerbaijan Baku</p>
+                        <p>Azerbaijan Baku</p>
+                    </address>
+                </div>
+
+
+                <div class="col-md-3">
+                    <hr style="background-color: white;">
+                    <h5 class="dark">Our Hose</h5>
+                    <hr style="background-color: white;">
+                    <p>BAKU</p>
+                    <p>BAKU</p>
+                    <p>BAKU</p>
+                    <p>BAKU</p>
+                </div>
+                <div class="col-md-3">
+                    <hr style="background-color: white;">
+                    <h5 class="dark">Service Area</h5>
+                    <hr style="background-color: white;">
+                    <p>City. State 00000</p>
+                    <p>City. State 00000</p>
+                    <p>City. State 00000</p>
+                    <p>City. State 00000</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <hr style="background-color: white;">
+                    <h5>&#xa9; Farid Alaskarov 2020</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------->
+
+
+
+</body>
+
+</html>
